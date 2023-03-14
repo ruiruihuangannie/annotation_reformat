@@ -27,7 +27,7 @@ rostopic:
 
 Move the repository to your catkin workspace and re-build it with the new repository
 ```shell
-mv dvrk_record_video ~/catkin_ws/
+mv dvrk_record_video ~/catkin_ws/src
 catkin build --summary
 ```
 
@@ -38,10 +38,10 @@ git clone https://github.com/ruiruihuangannie/annotation_reformat
 
 ## Features
 
-| Feature                   | Description             |
-|---------------------------| ----------------------- |
-| `convert_ambf_standard.py` | python script that converts ambf annotation video to match those from the public open dataset|
-| `output_formatting.py`    | python script that categorize the output into different folders that follows the general convention |
+| Feature                    | Description                                                                                   |
+|----------------------------|-----------------------------------------------------------------------------------------------|
+| `convert_ambf_standard.py` | python script that converts ambf annotation video to match those from the public open dataset |
+| `image.py`                 | python script that defines a customized image class                                           |
 
 # Usage
 ## Step 1
@@ -119,19 +119,19 @@ The raw image data will then be processed with the following goals in mind:
 
 ```shell
 cd ~/annotation_reformat/ # Navigate to the folder that contains the current repo
-python3 convert_ambf_standard.py -f recordings -r 01
+python3 convert_ambf_standard.py -f ~/data/ -r rec01
 ```
 If applicable, repeat the above steps for all recordings.
 
 ## Step 4 Check segmented images
 In each folder that now contains processed segmented images, each image should correspond to 4 segmented images, example:
 
-| Raw Image      | <img src=>                                         |
-|----------------|----------------------------------------------------|
-| AMBF annotation| <img src=>                                         |
-| annotation #1  | <img src=>                                         |
-| annotation #2  | <img src=>                                         |
-| annotation #3  | <img src=>                                         |
+| Raw Image      | <img src=Media/ambf_raw.png width = "480" /> |
+|----------------|------------------------------|
+| AMBF annotation| <img src=Media/ambf.png width = "480" />    |
+| annotation #1  | <img src=Media/1.png width = "480" />        |
+| annotation #2  | <img src=Media/2.png width = "480" />        |
+| annotation #3  | <img src=Media/3.png width = "480" />        |
 
 
 ## Conclusion
