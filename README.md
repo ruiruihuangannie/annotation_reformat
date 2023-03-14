@@ -37,11 +37,11 @@ git clone https://github.com/ruiruihuangannie/annotation_reformat
 ```
 
 ## Features
+|           Feature            | Description                                                                                   |
+|:----------------------------:|-----------------------------------------------------------------------------------------------|
+|  `convert_ambf_standard.py`  | python script that converts ambf annotation video to match those from the public open dataset |
+|          `image.py`          | python script that defines a customized image class                                           |
 
-| Feature                    | Description                                                                                   |
-|----------------------------|-----------------------------------------------------------------------------------------------|
-| `convert_ambf_standard.py` | python script that converts ambf annotation video to match those from the public open dataset |
-| `image.py`                 | python script that defines a customized image class                                           |
 
 # Usage
 ## Step 1
@@ -92,12 +92,12 @@ When data collection begins, the following `[Info]` should be displayed in the t
 ### Check
 When successfully launched, 5 separate application windows should appear, which includes:
 
-| Application       | Example                                                      |
-|-------------------|--------------------------------------------------------------|
-| dvRK console      | <img src=Media/dvrk_console.png width = "480" />             |
-| AMBF simulator    | <img src=Media/ambf_launch_scene.png width="480"/>           |
-| MTM GUI <br>(L/R) | <img src = Media/mtm_control_gui.png width = "480" />        |
-| dvrk recorder     | <img src = Media/recorder_double_screen.png width = "480" /> |
+|     Application     |                            Example                             |
+|:-------------------:|:--------------------------------------------------------------:|
+|    dvRK console     |        <img src=Media/dvrk_console.png width = "480" />        |
+|   AMBF simulator    |       <img src=Media/ambf_launch_scene.png width="480"/>       |
+|  MTM GUI <br>(L/R)  |     <img src = Media/mtm_control_gui.png width = "480" />      |
+|    dvrk recorder    |  <img src = Media/recorder_double_screen.png width = "480" />  |
 
 **Note**: At this point, the AMBF simulator should be projected onto the MTM console screen. If not, potential problems might include:
 1. Not properly installing AMBF, dVRK, surgical robotics challenge, or the video recorder
@@ -126,12 +126,12 @@ If applicable, repeat the above steps for all recordings.
 ## Step 4 Check segmented images
 In each folder that now contains processed segmented images, each image should correspond to 4 segmented images, example:
 
-| Raw Image      | <img src=Media/ambf_raw.png width = "480" /> |
-|----------------|------------------------------|
-| AMBF annotation| <img src=Media/ambf.png width = "480" />    |
-| annotation #1  | <img src=Media/1.png width = "480" />        |
-| annotation #2  | <img src=Media/2.png width = "480" />        |
-| annotation #3  | <img src=Media/3.png width = "480" />        |
+|    Raw Image     | <img src=Media/ambf_raw.png width = "480" />  |
+|:----------------:|:---------------------------------------------:|
+| AMBF annotation  |   <img src=Media/ambf.png width = "480" />    |
+|  annotation #1   |     <img src=Media/1.png width = "480" />     |
+|  annotation #2   |     <img src=Media/2.png width = "480" />     |
+|  annotation #3   |     <img src=Media/3.png width = "480" />     |
 
 
 ## Conclusion
