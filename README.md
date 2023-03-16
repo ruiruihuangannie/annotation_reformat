@@ -114,12 +114,12 @@ Navigate to the folder that now contains the recorded images and videos, which s
 The raw image data will then be processed with the following goals in mind:
 1. the annotation video will be selected in 1 out of 10 to make sure that every frame is slightly different from the previous ones.
 2. annotation #1: black-white (PSM arms/grippers, needle, thread = white), the rest are black
-3. annotation #2: black-3 colors (PSM arms/grippers = white, needle = blue, thread = gray), the rest are black
-4. annotation #3: black-4 colors (PSM arms = white, PSM grippers = purple, needle = blue, thread = gray), the rest are black
+3. annotation #2: black-3 colors (PSM arms/grippers = white, needle = red, thread = green), the rest are black
+4. annotation #3: black-4 colors (PSM arms = white, PSM grippers = blue, needle = red, thread = green), the rest are black
 
 ```shell
 cd ~/annotation_reformat/ # Navigate to the folder that contains the current repo
-python3 convert_ambf_standard.py -f ~/data/ -r rec01
+python3 convert_ambf_standard.py -i ~/data/rec01 # Change it to point to whatever folder that contains the images
 ```
 If applicable, repeat the above steps for all recordings.
 
